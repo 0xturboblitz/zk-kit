@@ -134,6 +134,15 @@ export default class IMT {
     }
 
     /**
+     * The whole tree.
+     * @returns The whole tree.
+     */
+    public get nodes(): IMTNode[][] {
+        return this._nodes
+    }
+    
+
+    /**
      * The list of zero values calculated during the initialization of the tree.
      * @returns The list of pre-computed zeroes.
      */
