@@ -1,3 +1,12 @@
+Fork of `privacy-scaling-explorations/zk-kit` that allows serialization of a whole tree and rebuilding it from serialized version. 
+
+When updating:
+```
+cd packages/imt
+yarn build
+```
+Then commit and change the commit hash in the Proof of Passport repo
+
 <p align="center">
     <h1 align="center">
         🧰 ZK-kit

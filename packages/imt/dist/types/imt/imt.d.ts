@@ -16,7 +16,7 @@ export default class IMT {
      * the level of the tree, while the second index represents the node's
      * position within that specific level.
      */
-    private readonly _nodes;
+    private _nodes;
     /**
      * A list of zero values calculated during the initialization of the tree.
      * The list contains one value for each level of the tree, and the value for
@@ -50,6 +50,7 @@ export default class IMT {
      * @param leaves The list of initial leaves.
      */
     constructor(hash: IMTHashFunction, depth: number, zeroValue: IMTNode, arity?: number, leaves?: IMTNode[]);
+    setNodes(nodes: IMTNode[][]): void;
     /**
      * The root of the tree. This value doesn't need to be stored as
      * it is always the first and unique element of the last level of the tree.

@@ -82,6 +82,9 @@ class IMT {
         Object.freeze(this._zeroes);
         Object.freeze(this._nodes);
     }
+    setNodes(nodes) {
+        this._nodes = nodes;
+    }
     /**
      * The root of the tree. This value doesn't need to be stored as
      * it is always the first and unique element of the last level of the tree.
